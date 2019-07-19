@@ -23,4 +23,10 @@ Route::get('signup', function(){
     return view('frontend.user.signup');
 });
 
-Route::get('contact', 'ContactController@contact')->name('contact');
+// show contact form
+Route::get('contact', 'ContactsController@showContact')->name('contact');
+//create the contacts URL
+// Route::get('/contact/create', 'ContactsController@createContact');
+//url t store d contact to db
+Route::post('contact/store', 'ContactsController@storeContact')->name('store');
+

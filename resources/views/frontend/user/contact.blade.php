@@ -5,7 +5,8 @@
 <div class="signup-page">
 		<h4>Contact Us/Send Us a Message</h4>
 		<!-- <p>SignUp to stay Updated</p> -->
-		<form action="contact.html" method="POST">
+		<form  method="post" action="{{route('store')}}">
+			@csrf
 			<div>
 				<label for="name">Full-Name:</label>
 				<input type="text" id="name" name="full_name" required placeholder="Enter your Full Name">
