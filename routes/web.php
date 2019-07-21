@@ -30,3 +30,6 @@ Route::get('contact', 'ContactsController@showContact')->name('contact');
 //url t store d contact to db
 Route::post('contact/store', 'ContactsController@storeContact')->name('store');
 
+//newsletter
+Route::post('newsletter', 'ContactsController@newsletter');
+

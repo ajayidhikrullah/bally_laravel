@@ -41,10 +41,4 @@ class ContactsController extends Controller
 
 
 
-
-
-
-
-
-
 }
