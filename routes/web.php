@@ -21,8 +21,7 @@ Route::get('/', function(){
 
 // show contact form
 Route::get('contact', 'ContactsController@showContact')->name('contact');
-//create the contacts URL
-// Route::get('/contact/create', 'ContactsController@createContact');
+
 //url t store d contact to db
 Route::post('contact/store', 'ContactsController@storeContact')->name('store');
 
@@ -30,3 +29,6 @@ Route::post('contact/store', 'ContactsController@storeContact')->name('store');
 // Route::get('footer', 'NewsletterController@newsLetter');
 Route::post('newsletter', 'NewsletterController@newsLetter')->name('newsletter');
 
+// signup register
+Route::get('/signup', 'RegisterController@create');
+Route::post('signup/store', 'RegisterController@store')->name('sign');

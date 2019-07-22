@@ -1,16 +1,16 @@
 @extends('layouts.home')
 @section('content')	
 	<div class="signup-page">
-		<form action="signup.html" method="POST">
+	<form action="{{route('sign')}}" method="POST">
 			@csrf
 			<div id="form-content">
 				<div class="text-input">
-					<label for="fname">First Name:</label>
-						<input type="text" class="inp_fid" id="fname" name="fname" required placeholder="type in your firstname">
+					<label for="name">First Name:</label>
+						<input type="text" class="inp_fid" id="name" name="name" required placeholder="type in your firstname">
 				</div>
 				<div class="text-input">
-					<label for="lname">Last Name:</label>
-					<input type="text" class="inp_fid" name="lname" id="lname" required placeholder="your surname">
+					<label for="fname">Last Name:</label>
+					<input type="text" class="inp_fid" name="fname" id="fname" required placeholder="your surname">
 				</div>
 				<div class="text-input">
 					<label for="email">Email:</label>
