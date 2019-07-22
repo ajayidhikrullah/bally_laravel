@@ -18,10 +18,6 @@
 Route::get('/', function(){
     return view('frontend.user.index');
 });
-// signup
-Route::get('signup', function(){
-    return view('frontend.user.signup');
-});
 
 // show contact form
 Route::get('contact', 'ContactsController@showContact')->name('contact');
@@ -31,5 +27,6 @@ Route::get('contact', 'ContactsController@showContact')->name('contact');
 Route::post('contact/store', 'ContactsController@storeContact')->name('store');
 
 //newsletter
-Route::post('newsletter', 'ContactsController@newsletter');
+// Route::get('footer', 'NewsletterController@newsLetter');
+Route::post('newsletter', 'NewsletterController@newsLetter')->name('newsletter');
 

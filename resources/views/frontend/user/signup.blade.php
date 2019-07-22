@@ -2,6 +2,7 @@
 @section('content')	
 	<div class="signup-page">
 		<form action="signup.html" method="POST">
+			@csrf
 			<div id="form-content">
 				<div class="text-input">
 					<label for="fname">First Name:</label>

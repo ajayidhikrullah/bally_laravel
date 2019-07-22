@@ -25,8 +25,8 @@
 <div class="fooform">
 	<h4>NEWSLETTER Sign-Up</h4>
 	<p>SignUp to stay Updated</p>
-<form action="" method="post">
-
+<form action="{{route('newsletter')}}" method="post">
+	@csrf
 <div> 
 	<label for="mail">E-mail:</label>
 	<input type="email" id="mail" name="user_mail" required placeholder="Enter your Email address">
