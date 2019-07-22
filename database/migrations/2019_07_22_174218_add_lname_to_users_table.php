@@ -15,6 +15,7 @@ class AddLnameToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
+            $table->string('fname')->after('name');
         });
     }
 
@@ -27,6 +28,7 @@ class AddLnameToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
+            $table->dropColum('fname');
         });
     }
 }
