@@ -1,13 +1,13 @@
 <nav class="main-nav">
 	<ul>
-		<li><a href="./index.html">Home</a></li>
-		<li><a href="./contact.html">Contact</a></li>
+		<li><a href="/">Home</a></li>
+	<li><a href="/contact">Contact</a></li>
 <!--JUST ADDED NEW HEADER--><li><a href="#">About</a></li>
-		<li><a href="./signup.html">Sign Up</a></li>
-		<li><a href="blog.html">Blog</a></li>
+		<li><a href="/signup">Sign Up</a></li>
+		<li><a href="#">Blog</a></li>
 	</ul>
 
-	<form action="logout.html">
+	<form action="#">
 		<button id="logout">Log Out</button>
 	</form>
 		<div class="searchbar">
