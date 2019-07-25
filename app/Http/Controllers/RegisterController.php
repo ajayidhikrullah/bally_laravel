@@ -16,30 +16,33 @@ class RegisterController extends Controller
 
     public function store()
     {
-        //validate the form
-        // $this->validate(request(), 
-        // [
-        //     'name'=> 'required',
-        //     'fname'=> 'required',
-        //     'email' => 'required|email',
-        //     'password' => 'required'
+    //Old ways to handle this request
+        // $user = new User;
+        // $user->name = request('name');
+        // $user->fname = request('fname');
+        // $user->email= request('email');
+        // $user->password = request('pwd');        
 
-        // ]);
+    //end of the old ways  
 
-        $user = new User;
-        $user->name = request('name');
-        $user->fname = request('fname');
-        $user->email= request('email');
-        $user->password = request('pwd');        
+    //create a new post using the request data NEW METHOD
+        //this automatically saves
+        User::create([
+            'name' => request('name'),
+            'fname'=> request('fname'),
+            'email'=> request('email'),
+            'password'=> request('pwd'),
+        ]);
 
 
-        // create and ave d user
-            $user->save();
+
+
+
+    // create and ave d user
+            // $user->save();
         //sign he user in
 
         return redirect('contact');
-
-        //redirect
 
         
     }
