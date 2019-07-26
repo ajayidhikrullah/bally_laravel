@@ -24,6 +24,8 @@
     <!-- <link rel="stylesheet" href="boostrap.css"> -->
     <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/assets/css/boostrap.css')}}">
+
     <script src=""></script>
     
 </head>
@@ -40,7 +42,11 @@
 	
 		@yield('content')
 	
-	</div>
+    </div>
+    
+    <div>
+        @include('frontend.user.errors')
+    </div>
 
 {{-- footer --}}
 	<footer class="main-footer">

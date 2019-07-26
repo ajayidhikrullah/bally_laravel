@@ -6,25 +6,25 @@
 			<div id="form-content">
 				<div class="text-input">
 					<label for="name">First Name:</label>
-						<input type="text" class="inp_fid" id="name" name="name" required placeholder="type in your firstname">
+						<input type="text" class="inp_fid" id="name" name="name" placeholder="type in your firstname">
 				</div>
 				<div class="text-input">
 					<label for="fname">Last Name:</label>
-					<input type="text" class="inp_fid" name="fname" id="fname" required placeholder="your surname">
+					<input type="text" class="inp_fid" name="fname" id="fname" placeholder="your surname">
 				</div>
 				<div class="text-input">
 					<label for="email">Email:</label>
-					<input type="email" class="inp_fid" name="email" id="email" required placeholder="your mail" >
+					<input type="email" class="inp_fid" name="email" id="email" placeholder="your mail" >
 				</div>
 
 				<div class="text-input">
 					<label for="pwd">Password</label>
-					<input type="password" class="inp_fid" name="pwd"  id="pwd" required placeholder="your password">
+					<input type="password" class="inp_fid" name="pwd"  id="pwd" placeholder="your password">
 				</div>
 
 				<div class="text-input">
 					<label for="re_pwd">Re-enter Password</label>
-					<input type="password" class="inp_fid" name="re_pwd"  id="re_pwd" required placeholder="Re-enter password">
+					<input type="password" class="inp_fid" name="re_pwd"  id="re_pwd" placeholder="Re-enter password">
 				</div>
 			</div>
 			<input type="submit" value="Sign Up" class="inp_fid" name="submit">
