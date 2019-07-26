@@ -92,7 +92,7 @@ header{
 	/*background-color: brown;*/
 	/*display: inline;*/
 	float: right;
-	margin-right: 150px;
+	margin: 0 150px 10px 0;
 	padding: 10px;
 }
 
@@ -129,6 +129,18 @@ header{
 	}
 }
 
+.center-error{
+  margin: 5px 30% 0 30%;
+}
+
+.center-error ul li{
+  list-style-type: none;
+  font-style: italic;
+}
+
+ul{
+  font-weight: 300;
+}
 
 
 
@@ -661,7 +673,7 @@ a{
 .signup-page{
   background-color: #79541952;
   color:coral;
-  margin: 0 auto;
+  margin: 5% auto 5% auto;
   box-shadow: 5px 5px 5px black;
   width: 70%; 
   box-sizing: border-box;

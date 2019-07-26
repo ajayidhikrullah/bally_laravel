@@ -26,9 +26,13 @@
 					<label for="re_pwd">Re-enter Password</label>
 					<input type="password" class="inp_fid" name="re_pwd"  id="re_pwd" placeholder="Re-enter password">
 				</div>
+				<div class="text-input">
+					{{-- <input type="submit" value="Sign Up" class="" name="submit"> --}}
+					<button type="submit"  class="btn-signup">Sign Up</button>
+				</div>
+			
 			</div>
-			<input type="submit" value="Sign Up" class="inp_fid" name="submit">
-			<!-- <button type="submit" class="btn-signup">Sign Up</button> -->
+			
 		</form>
 	</div>
 @endsection

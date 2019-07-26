@@ -36,16 +36,18 @@
 		@include('layouts.navbar')
 	</header>
 	
-        <div class="clear"></div>
-    
+        <div class="clearfix"></div>
+    {{-- error handler --}}
+
+
 	<div class="full_section">
-	
+            <div>
+                @include('frontend.user.errors')
+            </div>
+        </div>
+        
 		@yield('content')
 	
-    </div>
-    
-    <div>
-        @include('frontend.user.errors')
     </div>
 
 {{-- footer --}}
