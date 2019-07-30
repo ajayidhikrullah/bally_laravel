@@ -32,3 +32,6 @@ Route::post('newsletter', 'NewsletterController@newsLetter')->name('newsletter')
 // signup register
 Route::get('/signup', 'RegisterController@create');
 Route::post('signup/store', 'RegisterController@store')->name('sign');
+
+//about us
+Route::get('/about', 'AboutusController@showAbout');

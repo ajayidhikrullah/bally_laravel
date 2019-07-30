@@ -1,7 +1,8 @@
-@include('home.blade.php')
+@extends('layouts.home')
 @section('content')
-<div class="container">
+
+{{-- <div class="container"> --}}
 	<h1>ABOUT US uner construction</h1>
 	
-</div>	
+{{-- </div>	 --}}
 @endsection
