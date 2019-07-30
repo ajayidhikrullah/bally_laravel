@@ -3,6 +3,11 @@
 	<div class="signup-page">
 	<form action="{{route('sign')}}" method="POST">
 			@csrf
+			
+			{{-- @foreach ($users as $user)
+				{{$user->email}}		
+			@endforeach --}}
+
 			<div id="form-content">
 				<div class="text-input">
 					<label for="name">First Name:</label>
@@ -22,10 +27,10 @@
 					<input type="password" class="inp_fid" name="pwd"  id="pwd" placeholder="your password">
 				</div>
 
-				<div class="text-input">
+				{{-- <div class="text-input">
 					<label for="re_pwd">Re-enter Password</label>
 					<input type="password" class="inp_fid" name="re_pwd"  id="re_pwd" placeholder="Re-enter password">
-				</div>
+				</div> --}}
 				<div class="text-input">
 					{{-- <input type="submit" value="Sign Up" class="" name="submit"> --}}
 					<button type="submit"  class="btn-signup">Sign Up</button>

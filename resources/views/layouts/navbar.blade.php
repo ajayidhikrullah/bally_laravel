@@ -7,11 +7,13 @@
 		<li><a href="#">Blog</a></li>
 	</ul>
 
-	<form action="#">
-		<button id="logout">Log Out</button>
+	{{-- //lets return the username when signed up --}}
+
+	
+		{{-- <button id="logout">Log Out</button>
 	</form>
 		<div class="searchbar">
 			<input type="text" name="search">
 			<button id="logout" type="submit"><i class="fa fa-search fa-5x"></i></button>
-		</div>
+		</div> --}} --}}
 </nav>
