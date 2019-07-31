@@ -103,13 +103,6 @@ header{
   background-color: white;
 }
 
-.main-nav .searchbar:hover{
-  
-}
-
-
-
-
 .main-nav ul li{
   display: inline;
   background-color:#fff;
@@ -570,7 +563,7 @@ form{
     padding: 20px;
   
   }
- .fooadd + address, p {
+ .fooadd + address {
   color: beige;
   text-align: justify;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
