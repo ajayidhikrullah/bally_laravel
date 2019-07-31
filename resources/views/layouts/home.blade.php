@@ -45,8 +45,10 @@
                 @include('frontend.user.errors')
             </div>
         </div>
+    <div class="container">
         
-		@yield('content')
+        @yield('content')
+    </div>
 	
     </div>
 
