@@ -34,24 +34,26 @@
 				<table class="table">
 				  <thead>
 					  <h1>{{$tableTopic}}</h1>
-					<tr>
-					<th>firstName</th>
-					  <th>MiddleName</th>
-					  <th>Email</th>
+					
+					  <tr>
+						<th>firstName</th>
+					  	<th>MiddleName</th>
+					  	<th>Email</th>
 					</tr>
 				  </thead>
 				  <tbody>
-					<tr>
-					  <td>{{$fname}}</td>
-					  <td>{{$lname}}</td>
-					  <td>{{$email}}</td>
-					</tr>
-					<tr>
-					  <td>Mary</td>
-					  <td>Moe</td>
-					  <td>mary@example.com</td>
-					</tr>
-					<tr>
+					@if(count($profiles) > 0)
+						@foreach ($profiles as $profile)
+						
+						<tr>
+						<td>{{$profile}}</td>
+						<td>{{$profile}}</td>
+						<td>{{$profile}}</td>
+						</tr>
+														
+					@endforeach
+					@endif
+ 					<tr>
 					  <td>July</td>
 					  <td>Dooley</td>
 					  <td>july@example.com</td>
