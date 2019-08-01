@@ -35,3 +35,7 @@ Route::post('signup/store', 'RegisterController@store')->name('sign');
 
 //about us
 Route::get('/about', 'AboutusController@showAbout');
+
+
+//blog
+Route::get('/blog', 'BlogController@create');
