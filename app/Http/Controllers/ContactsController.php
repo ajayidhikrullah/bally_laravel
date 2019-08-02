@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 use \App\Contact;
 
@@ -38,8 +37,4 @@ class ContactsController extends Controller
         // firstly (die and dump)
         // dd(request(['user_mail']));
     }
-
-
-
-
 }
