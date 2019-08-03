@@ -30,4 +30,22 @@
 			<button type="submit" name="submit" class="btn-signup">Send Message</button>
 		</form>            
 </div>
-	<br>
+<button class="btn btn-primary" id="con">Hello</button>
+
+@section('script')
+    <script src="{{asset('frontend/assets/js/script.js')}}"></script>
+@endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>

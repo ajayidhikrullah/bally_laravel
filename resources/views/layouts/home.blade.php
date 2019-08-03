@@ -9,24 +9,19 @@
     
     <!--Title-->
     <title>[M N L]</title>
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> --}}
 
     <!--favicon-->
-    <link rel="shortcut icon" href="{{asset('frontend/assets/img/favicon/favicon.ico')}}">
 
     <!--Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Railway:100,200,300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
-
+    
     <!--Font- awesome-->
     <link rel="stylesheet" href="{{asset('frontend/assets/css/font-awesome/css/font-awesome.min.css')}}">
     
     <!--Boostrap css-->
-    <!-- <link rel="stylesheet" href="boostrap.css"> -->
-    <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/assets/css/boostrap.css')}}">
-
-    <script src=""></script>
+    <script src="{{asset('frontend/assets/js/jquery-3.4.1.min.js')}}"></script>
     
 </head>
 
@@ -54,7 +49,9 @@
 	<footer class="main-footer">
 		@include('layouts.footer')
 	</footer>
-	<script src="js/script.js"></script>
+    
+    @yield('script')
+
 </div>  
 </body>
 </html>
