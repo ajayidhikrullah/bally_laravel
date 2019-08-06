@@ -1,6 +1,19 @@
 @extends('layouts.home')
 @section('content')
 	<h1>BALLY BLOG</h1>
+<div class="images-container">       
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <form method='POST' action="">
+            <input type='text' name='u_name' value='anonymmous'>
+            <input type='text' class='' name='date' value='".date('')."'> <br> <br>
+            <textarea name='message' id='' cols='30' rows='10'></textarea> <br>
+            <button type='submit' class='btn-signup' name='submitComment'>Comment</button>
+        </form>";
+</div>
+
+<br>
+<br>
 	<div class="container">
 			<h2>FEEDBACK FORM</h2>
 			<form class="form-horizontal" method="POST" action="{{route('storePost')}}">
@@ -28,13 +41,13 @@
 		  
 
 
-	<div class="container">
 		<button class="btn btn-success" id="btn">ShowPost</button>
-		
+		<br> <br>
+		<div class="container" id="postBox">
 		<br> <br>
 		@if (count($posts) >= 1)
 			@foreach ($posts as $post)
-				<div id="postBox" class="well">
+				<div class="well">
 					<h2><span class="glyphicon glyphicon-envelope"></span></h2>
 					<span class="glyphicon glyphicon-user"></span>
 					<h3>This is the number {{$post->id}} user with Error Title of {{$post->error}} </h3>

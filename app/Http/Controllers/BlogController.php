@@ -12,6 +12,14 @@ class BlogController extends Controller
         return view('frontend.user.blog');
     }
 
+
+    //this is my new blog homepage
+    public function home()
+    {
+        return view('layouts.posts.home');
+    }
+
+
     public function storePost()
     {
         $post = new Post;
