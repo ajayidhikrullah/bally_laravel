@@ -32,19 +32,4 @@ class BlogController extends Controller
 
     }
 
-   
-        //this is my new blog homepage
-        public function home()
-        {
-            return view('layouts.posts.home');
-        }
-        
-        public function create()
-        {
-            return view('layouts.posts.create');
-        }
-
-
-
-
 }

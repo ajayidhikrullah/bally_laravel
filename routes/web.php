@@ -43,6 +43,9 @@ Route::post('blog/store', 'BlogController@storePost')->name('storePost');
 
 //show post in blog
 Route::get('/blog', 'BlogController@showPost');
+
+
 //my new blog with laracast
-Route::get('/home', 'BlogController@home');
-Route::get('/posts/create', 'BlogController@create');
+Route::get('/home', 'CategoryController@home');
+Route::get('/category/create', 'CategoryController@create');
+Route::post('/category', 'CategoryController@store');
