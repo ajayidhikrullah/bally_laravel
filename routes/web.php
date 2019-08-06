@@ -38,7 +38,7 @@ Route::get('/about', 'AboutusController@showAbout');
 
 
 //blog
-Route::get('/blog', 'BlogController@create');
+Route::get('/blog', 'BlogController@balBlog');
 Route::post('blog/store', 'BlogController@storePost')->name('storePost');
 
 //show post in blog

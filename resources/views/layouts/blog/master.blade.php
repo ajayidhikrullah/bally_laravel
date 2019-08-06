@@ -17,7 +17,9 @@
     {{-- <link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}"> --}}
 
     <link rel="stylesheet" href="{{asset('css/blog/bootstrap4.css')}}">
-  <link rel="stylesheet" href="{{asset('css/blog/blog.css')}}">
+    <link rel="stylesheet" href="{{asset('css/blog/blog.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}">
+
 
     <!-- Custom styles for this template -->
     {{-- my own styles sheet and bootsrap --}}
@@ -31,7 +33,7 @@
 
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Balqees Blog</h1>
+        <h1 class="blog-title">The AJAYI's Blog</h1>
         <p class="lead blog-description">An example blog template built with Bootstrap.</p>
       </div>
     </div>
@@ -39,9 +41,10 @@
 
     <div class="container">
       <div class="row">
-        @yield('content')
+        
+          @yield('content')
 
-        @include('layouts.blog.sidebar')
+          @include('layouts.blog.sidebar')
 
       </div>
 

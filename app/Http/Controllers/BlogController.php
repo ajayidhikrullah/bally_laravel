@@ -7,17 +7,12 @@ use App\Post;
 class BlogController extends Controller
 {
     //
-    public function create()
+    public function balBlog()
     {
         return view('frontend.user.blog');
     }
 
 
-    //this is my new blog homepage
-    public function home()
-    {
-        return view('layouts.posts.home');
-    }
 
 
     public function storePost()
@@ -36,6 +31,18 @@ class BlogController extends Controller
         return view('frontend.user.blog')->with('posts', $posts);
 
     }
+
+   
+        //this is my new blog homepage
+        public function home()
+        {
+            return view('layouts.posts.home');
+        }
+        
+        public function create()
+        {
+            return view('layouts.posts.create');
+        }
 
 
 
