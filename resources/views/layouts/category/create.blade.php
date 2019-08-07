@@ -1,9 +1,11 @@
 @extends('layouts.blog.master')
 @section('content')
 <div class="col-sm-8 blog-main">
+		@include('frontend.user.errors')
+
 	<h1>Create a category</h1>
 
-	<form class="form-horizontal" method="POST" action="/category">
+	<form class="form-horizontal" method="POST" action="">
 		@csrf
 		{{-- {{csrf_field()}} --}}
 			<div class="form-group">
@@ -34,5 +36,8 @@
 			  </div>
 			</div>
 		  </form>
-</div>	
+
+</div>
+
+
 @endsection

@@ -1,8 +1,17 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
-		<div class="sidebar-module sidebar-module-inset">
+		{{-- <div class="sidebar-module sidebar-module-inset">
 		  <h4>About</h4>
 		  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+		</div> --}}
+		{{-- categories --}}
+		<div class="sidebar-module sidebar-module-inset">
+				<h2>Sectors</h2>
+				@foreach ($category as $categories)
+		<p><a href="/category/{{$categories->id}}">{{$categories->category}}</a> <br> {{$categories->created_at->toFormattedDateString()}}</p>
+				@endforeach
 		</div>
+
+
 		<div class="sidebar-module">
 		  <h4>Archives</h4>
 		  <ol class="list-unstyled">

@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>| HAYJAY |</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
     {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> --}}
     <!-- Bootstrap core CSS -->
@@ -52,12 +52,5 @@
 
 
     @include('../layouts.footer')
-
-
-
-
-
-
-
   </body>
   </html>

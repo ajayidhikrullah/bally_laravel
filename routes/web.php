@@ -49,3 +49,5 @@ Route::get('/blog', 'BlogController@showPost');
 Route::get('/home', 'CategoryController@home');
 Route::get('/category/create', 'CategoryController@create');
 Route::post('/category', 'CategoryController@store');
+//category with an ID
+Route::get('/category/{category}', 'CategoryController@store')

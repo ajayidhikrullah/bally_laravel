@@ -11,28 +11,48 @@ class CategoryController extends Controller
     //this is my new blog homepage
     public function home()
     {
-        return view('layouts.posts.home');
+
+        $category = Category::all();
+        return view('layouts.category.home', compact('category'));
     }
     
     public function create()
     {
-        return view('layouts.posts.create');
+        $category = Category::all();
+        return view('layouts.category.create', compact('category'));
     }
 
     public function store()
     {
         //create a new post using d requets data
-            // dd(request(['category', 'title']));
-            $category = new Category;
-            $category->title = request('title');
-            $category->category = request('category');
+            // // dd(request(['category', 'title']));
+            // $category = new Category;
+            // $category->title = request('title');
+            // $category->category = request('category');
+            
+            // OR
+        // before creating a post, lets vaidate
+        $this->validate(request(), 
+        [
+            'title' => 'required',
+            'category' => 'required',
+        ]);
 
-        //save to db
-        $category->save();
+            Category::create(request([
+            
+                
+                'title',
+                'category',
+
+            ]));
+
 
 
         //redirect
             return redirect('/home');
 
     }
+
+
+    public 
 }
