@@ -7,7 +7,10 @@
 		<div class="sidebar-module sidebar-module-inset">
 				<h2>Sectors</h2>
 				@foreach ($category as $categories)
-		<p><a href="/category/{{$categories->id}}">{{$categories->category}}</a> <br> {{$categories->created_at->toFormattedDateString()}}</p>
+		<p><a href="/category/{{$categories->id}}">
+			{{$categories->title}}</a>
+			<br>
+			{{$categories->created_at->toFormattedDateString()}}</p>
 				@endforeach
 		</div>
 

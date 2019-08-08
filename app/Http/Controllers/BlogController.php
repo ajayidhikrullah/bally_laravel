@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Category;
 class BlogController extends Controller
 {
     //
     public function balBlog()
     {
-        return view('frontend.user.blog');
+        $categories = new Category;
+        $categories = Category::all();
+        return view('frontend.user.blog')->with('categories', $categories);
     }
 
 
@@ -17,7 +20,7 @@ class BlogController extends Controller
 
     public function storePost()
     {
-        $post = new Post;
+        // $post = new Post;
         $post->error = request('error');
         $post->feedback = request('feedback');
         $post->save();

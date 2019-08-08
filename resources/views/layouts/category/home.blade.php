@@ -9,6 +9,11 @@
 				<div class="blog-post">
 				<h2 class="blog-post-title">Sample blog post</h2>
 				<p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+
+				<div class="well">
+					{{-- {{$category->title}}
+					{{$category->category}} --}}
+				</div>
 	
 				<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
 				<hr>
@@ -64,7 +69,6 @@
 				<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
 				<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
 				</div><!-- /.blog-post --> --}}
-	
 				<nav class="blog-pagination">
 				<a class="btn btn-outline-primary" href="#">Older</a>
 				<a class="btn btn-outline-secondary disabled" href="#">Newer</a>

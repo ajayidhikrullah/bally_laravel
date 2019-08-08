@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Post;
 
 class CategoryController extends Controller
 {
@@ -39,11 +40,8 @@ class CategoryController extends Controller
         ]);
 
             Category::create(request([
-            
-                
                 'title',
                 'category',
-
             ]));
 
 
@@ -54,5 +52,14 @@ class CategoryController extends Controller
     }
 
 
-    public 
+    public function show(Category $category) 
+    {
+        // $category = Category::findOrfail($id);
+        // return it to the first old blog in frontend-user-blog
+        // return view('frontend.user.blog')->with('categories', $categories);
+        // return to a testing blog
+        return view('layouts.category.show', compact('category'));
+
+    }
+
 }

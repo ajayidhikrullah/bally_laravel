@@ -50,4 +50,4 @@ Route::get('/home', 'CategoryController@home');
 Route::get('/category/create', 'CategoryController@create');
 Route::post('/category', 'CategoryController@store');
 //category with an ID
-Route::get('/category/{category}', 'CategoryController@store')
+Route::get('/category/{category}', 'CategoryController@show');

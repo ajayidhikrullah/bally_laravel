@@ -58,6 +58,22 @@
 				<p>No Posts found</p>
 		@endif
 	</div>
+	{{-- categories --}}
+	<div class="well">
+		{{-- <h3>This is the number {{$categories->id}} Category from Blog with the Sector of {{$categories->title}} </h3>
+		<small>Sent on {{$categories->created_at}}</small> --}}
+
+	</div>
+
+
+
+
+
+
+
+
+
+
 @endsection	
 
 @section('script')
