@@ -6,11 +6,11 @@
 		{{-- categories --}}
 		<div class="sidebar-module sidebar-module-inset">
 				<h2>Sectors</h2>
-				@foreach ($category as $categories)
-		<p><a href="/category/{{$categories->id}}">
-			{{$categories->title}}</a>
+				@foreach ($category1 as $cat)
+		<p><a href="/category/{{$cat->id}}">
+			{{$cat->title}}</a>
 			<br>
-			{{$categories->created_at->toFormattedDateString()}}</p>
+			{{$cat->created_at->toFormattedDateString()}}</p>
 				@endforeach
 		</div>
 
@@ -24,12 +24,6 @@
 			<li><a href="#">December 2013</a></li>
 			<li><a href="#">November 2013</a></li>
 			<li><a href="#">October 2013</a></li>
-			<li><a href="#">September 2013</a></li>
-			<li><a href="#">August 2013</a></li>
-			<li><a href="#">July 2013</a></li>
-			<li><a href="#">June 2013</a></li>
-			<li><a href="#">May 2013</a></li>
-			<li><a href="#">April 2013</a></li>
 		  </ol>
 		</div>
 		<div class="sidebar-module">

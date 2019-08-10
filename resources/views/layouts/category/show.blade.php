@@ -1,12 +1,13 @@
 @extends('layouts.blog.master')
 @section('content')
+	<div class="col-sm-8 blog-main">
 	
 		<div class="well">
-			{{$category->title}}
-			{{$category->category}}
+			<h3>{{$category3->title}}</h3>
+			<p>{{$category3->category}}</p>
 		</div>
-
+	</div>
 	<div class="well">
-		<p>SHOWS THEMAJOR POST GANGAN</p>
+		<p></p>
 	</div>
 @endsection

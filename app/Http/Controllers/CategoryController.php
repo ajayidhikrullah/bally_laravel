@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
-use App\Post;
+// use App\Post;
 
 class CategoryController extends Controller
 {
@@ -13,8 +13,8 @@ class CategoryController extends Controller
     public function home()
     {
 
-        $category = Category::all();
-        return view('layouts.category.home', compact('category'));
+        $category1 = Category::all();
+        return view('layouts.category.home', compact('category1'));
     }
     
     public function create()
@@ -38,28 +38,28 @@ class CategoryController extends Controller
             'title' => 'required',
             'category' => 'required',
         ]);
+        //valiadet ends.
 
             Category::create(request([
                 'title',
                 'category',
             ]));
 
-
-
         //redirect
             return redirect('/home');
-
     }
 
-
-    public function show(Category $category) 
+    public function show($id /*Category $category*/)
+  
     {
-        // $category = Category::findOrfail($id);
+        // dd($id);
+        $category1 = Category::all();
+        // dd($categ);
+        $category3 = Category::find($id);
+        // dd($category);
         // return it to the first old blog in frontend-user-blog
         // return view('frontend.user.blog')->with('categories', $categories);
         // return to a testing blog
-        return view('layouts.category.show', compact('category'));
-
+        return view('layouts.category.show', compact(['category3', 'category1']));
     }
-
 }
