@@ -5,7 +5,7 @@
 
 	<h1>Create a category</h1>
 
-	<form class="form-horizontal" method="POST" action="">
+<form class="form-horizontal" method="POST" action="/category">
 		@csrf
 		{{-- {{csrf_field()}} --}}
 			<div class="form-group">
@@ -17,7 +17,7 @@
 			<div class="form-group">
 			  <label for="category" class="col-sm-2 control-label">Category Name:</label>
 			  <div class="col-sm-10">
-				<input type="text" name="category" class="form-control" id="category"> 
+				<textarea type="text" name="category" class="form-control" id="category" placeholder="category name"></textarea>
 			  </div>
 			</div>
 			

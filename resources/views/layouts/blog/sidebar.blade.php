@@ -6,7 +6,7 @@
 		{{-- categories --}}
 		<div class="sidebar-module sidebar-module-inset">
 				<h2>Sectors</h2>
-				@foreach ($category1 as $cat)
+				@foreach ($category_1 as $cat)
 		<p><a href="/category/{{$cat->id}}">
 			{{$cat->title}}</a>
 			<br>

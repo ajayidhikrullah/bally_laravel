@@ -3,8 +3,8 @@
 	<div class="col-sm-8 blog-main">
 	
 		<div class="well">
-			<h3>{{$category3->title}}</h3>
-			<p>{{$category3->category}}</p>
+			<h3>{{$category->title}}</h3>
+			<p>{{$category->category}}</p>
 		</div>
 	</div>
 	<div class="well">

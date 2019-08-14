@@ -12,21 +12,26 @@ class CategoryController extends Controller
     //this is my new blog homepage
     public function home()
     {
+        $category = Category::latest()->get();
+        // return $category;
+        // $category7 = Category::all();
+        // $category1 = Category::all();
 
-        $category1 = Category::all();
-        return view('layouts.category.home', compact('category1'));
+
+        return view('layouts.category.home', compact('category'));
     }
     
     public function create()
     {
         $category = Category::all();
-        return view('layouts.category.create', compact('category'));
+        return view('layouts.category.create', compact('category1', 'category'));
     }
 
     public function store()
     {
+
         //create a new post using d requets data
-            // // dd(request(['category', 'title']));
+            // dd(request()->all());
             // $category = new Category;
             // $category->title = request('title');
             // $category->category = request('category');
@@ -53,13 +58,13 @@ class CategoryController extends Controller
   
     {
         // dd($id);
-        $category1 = Category::all();
+        // $category1 = Category::all();
         // dd($categ);
-        $category3 = Category::find($id);
+        $category = Category::find($id);
         // dd($category);
         // return it to the first old blog in frontend-user-blog
         // return view('frontend.user.blog')->with('categories', $categories);
         // return to a testing blog
-        return view('layouts.category.show', compact(['category3', 'category1']));
+        return view('layouts.category.show', compact('category'));
     }
 }

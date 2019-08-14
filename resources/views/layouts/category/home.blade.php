@@ -10,11 +10,6 @@
 				<h2 class="blog-post-title">Hayjay's blog post</h2>
 				<p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
-				<div class="well">
-					{{-- {{$category->title}}
-					{{$category->category}} --}}
-				</div>
-	
 				<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
 				<hr>
 				<blockquote>
