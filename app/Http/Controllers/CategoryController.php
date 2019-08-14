@@ -29,7 +29,6 @@ class CategoryController extends Controller
 
     public function store()
     {
-
         //create a new post using d requets data
             // dd(request()->all());
             // $category = new Category;
@@ -44,7 +43,6 @@ class CategoryController extends Controller
             'category' => 'required',
         ]);
         //valiadet ends.
-
             Category::create(request([
                 'title',
                 'category',

@@ -51,3 +51,6 @@ Route::get('/category/create', 'CategoryController@create');
 Route::post('/category', 'CategoryController@store');
 //category with an ID
 Route::get('/category/{category}', 'CategoryController@show');
+
+//add comment
+ Route::post('/posts/{post}/comments', 'CommentsController@store')->name('comment');
